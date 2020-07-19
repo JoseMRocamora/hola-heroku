@@ -8,7 +8,7 @@ app = new_server.app
 
 flask_environment = os.getenv('FLASK_ENV')
 if flask_environment == 'production':
-    from werkzeug.contrib.fixers import ProxyFix
+    from flask.sessions import ProxyFix
     app.wsgi_app = ProxyFix(app.wsgi_app)
 
 if __name__ == "__main__":
