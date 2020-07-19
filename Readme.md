@@ -60,7 +60,7 @@ para arrancar el proyecto ejecutaremos:
 
     flask run
 
-### Ejecucion desde el servidor de aplicaciones gunicorn
+### Ejecucion desde el servidor de aplicaciones gunicorn (solo para entornos linux / macos)
 
     gunicorn --bind 0.0.0.0:5000 wsgi:app
 
@@ -74,7 +74,7 @@ para arrancar el proyecto ejecutaremos:
 
 3. Clonar o preparar el repositorio git local a vincular con heroku
 
-    Procfile, runtime.txt y requirements.txt
+    Procfile, Procfile.windows, runtime.txt y requirements.txt
     pip freeze > requirements.txt
 
 4. Crear la aplicacion 
@@ -91,3 +91,10 @@ https://hola-heroku-200719.herokuapp.com/ | https://git.heroku.com/hola-heroku-2
 
     git push heroku master
 
+6. Ejecutar aplicacion localmente
+
+    heroku local web -f Procfile.windows
+
+    o 
+
+    heroku local web 
