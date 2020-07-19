@@ -78,14 +78,14 @@ para arrancar el proyecto ejecutaremos:
     pip freeze > requirements.txt
 
 4. Crear la aplicacion 
-    heroku create wheat-crop-disease-predictor
-    heroku config:set FLASK_APP=webapp
+    heroku create hola-heroku-200719
+    
+Creating hola-heroku-200719... done
+https://hola-heroku-200719.herokuapp.com/ | https://git.heroku.com/hola-heroku-200719.git
+
+    heroku config:set FLASK_APP=wsgi
     heroku config:set FLASK_ENV=production
     heroku config:set APP_SETTINGS_MODULE=config.prod
-
-
-Creating wheat-crop-disease-predictor... done
-https://wheat-crop-disease-predictor.herokuapp.com/ | https://git.heroku.com/wheat-crop-disease-predictor.git
 
 5. Subir los cambios al repositorio remoto de la app en heroku
 
